@@ -1,0 +1,24 @@
+{
+  "name": "ouch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madzathemes/ouch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madzathemes/ouch/issues"
+  },
+  "homepage": "https://github.com/madzathemes/ouch#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-zip": "^4.0.0"
+  }
+}
