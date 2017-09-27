@@ -45,7 +45,7 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
         <span class="hide" itemprop="dateModified"><?php the_modified_date(); ?></span>
       </div>
     </div>
-    <?php if(class_exists('md_walker')) { ?>
+    <?php if(function_exists('magazin_text_domain')) { ?>
     <div class="post-statistic pull-left">
       <?php if(!empty($shares)){ ?><span class="stat-shares color-silver-light"><strong><?php echo esc_attr($shares); ?></strong> <?php echo esc_html__('Shares', 'ouch'); ?></span><?php } ?>
       <?php if(!empty($viewes)){ ?><span class="stat-views"><strong><?php echo esc_attr($viewes) ?></strong> <?php echo esc_html__('Views', 'ouch'); ?></span><?php } ?>
@@ -54,18 +54,20 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
 
     <div class="clearfix"></div>
     <?php if($share_top=="" or $share_top == "yes"){ ?>
-    <ul class="share top">
-      <li class="share-facebook"><a class="mt-radius" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>" target="_blank"><span><?php echo esc_html__('Share on Facebook', 'ouch'); ?></span></a></li>
-      <?php $input = get_the_title().' '.get_the_permalink(); $title = str_replace( ' ', '+', $input ); ?>
-      <li class="share-twitter"><a class="mt-radius" href="http://twitter.com/home/?status=<?php echo esc_attr($title); ?>" target="_blank"><span><?php echo esc_html__('Tweet on Twitter', 'ouch'); ?></span></a></li>
-      <li class="share-more">
-        <div class="share-more-wrap"><div class="share-more-icon mt-radius">+</div></div>
+      <?php if (function_exists('magazin_text_domain') ) { ?>
+        <ul class="share top">
+          <li class="share-facebook"><a class="mt-radius" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>" target="_blank"><span><?php echo esc_html__('Share on Facebook', 'ouch'); ?></span></a></li>
+          <?php $input = get_the_title().' '.get_the_permalink(); $title = str_replace( ' ', '+', $input ); ?>
+          <li class="share-twitter"><a class="mt-radius" href="http://twitter.com/home/?status=<?php echo esc_attr($title); ?>" target="_blank"><span><?php echo esc_html__('Tweet on Twitter', 'ouch'); ?></span></a></li>
+          <li class="share-more">
+            <div class="share-more-wrap"><div class="share-more-icon mt-radius">+</div></div>
 
-        <a class="mt-radius" href="http://pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo esc_url($url); ?>" target="_blank"><div class="pinterest mt-radius-b"></div></a>
-        <a class="mt-radius" href="https://plus.google.com/share?url=<?php the_permalink() ?>" target="_blank"><div class="google mt-radius-b"></div></a>
+            <a class="mt-radius" href="http://pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo esc_url($url); ?>" target="_blank"><div class="pinterest mt-radius-b"></div></a>
+            <a class="mt-radius" href="https://plus.google.com/share?url=<?php the_permalink() ?>" target="_blank"><div class="google mt-radius-b"></div></a>
 
-      </li>
-    </ul>
+          </li>
+        </ul>
+      <?php } ?>
     <?php } ?>
     <div class="single-stat-comments">
       <?php if (get_comments_number()!="0") { ?><span class="stat-comments"><?php echo get_comments_number(); ?> Comments</span><?php } ?>

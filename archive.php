@@ -6,13 +6,20 @@
 			<div class="col-md-8  floatleft">
 				<?php if ( shortcode_exists( 'posts' ) ) {
 
-					echo do_shortcode('[posts pagination=on type=normal-right ]');
+				echo do_shortcode('[posts pagination=on type=normal-right ]');
 
-				} else {
+			} else {
 
-					get_template_part( 'content', get_post_format() );
+				if (have_posts() ) { ?>
 
-				}?>
+					<?php while ( have_posts() ) : the_post(); ?>
+						<h2><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'ouch' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php echo get_the_title();  ?></a></h2>
+					<?php endwhile;
+					the_posts_pagination();
+
+				}
+
+			}?>
 			</div>
 			<div class="col-md-4  floatright">
 				<?php get_sidebar(); ?>

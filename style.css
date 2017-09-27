@@ -5,7 +5,7 @@
     Theme URI: https://ouch.madzathemes.com/
     Description: Magazine / Blog
     Author: Madars Bitenieks
-    Author URI: https://ouch.madzathemes.com/
+    Author URI: https://themeforest.net/user/madza
     License: GNU General Public License version 3.0
     License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	Author Madars Bitenieks for https://ouch.madzathemes.com
@@ -5299,4 +5299,16 @@ li.mtc-buy {
   display: inline;
   float: left;
   font-weight: 900;
+}
+
+.entry-content:before {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+.entry-content:after {
+  clear: both;
+  content: "";
+  display: table;
+  table-layout: fixed;
 }

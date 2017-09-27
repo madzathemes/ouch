@@ -29,16 +29,18 @@ function ouch_single_bottom() {
 </div>
    <div class="tags"><?php echo get_the_tag_list(); ?></div>
    <?php if($share_bottom=="" or $share_bottom == "yes"){ ?>
-   <ul class="share down">
-     <li class="share-facebook"><a class="mt-radius" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>" target="_blank"><span><?php echo esc_html__('Share on Facebook', 'ouch'); ?></span></a></li>
-     <?php $input = get_the_title().' '.get_the_permalink(); $title = str_replace( ' ', '+', $input ); ?>
-     <li class="share-twitter"><a class="mt-radius" href="http://twitter.com/home/?status=<?php echo esc_attr($title); ?>" target="_blank"><span><?php echo esc_html__('Tweet on Twitter', 'ouch'); ?></span></a></li>
-     <li class="share-more">
-       <a class="mt-radius" href="https://plus.google.com/share?url=<?php the_permalink() ?>" target="_blank"><div class="google mt-radius-b"></div></a>
-       <a class="mt-radius" href="http://pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo esc_url($url); ?>" target="_blank"><div class="pinterest mt-radius-b"></div></a>
-       <div class="share-more-wrap"><div class="share-more-icon mt-radius">+</div></div>
-     </li>
-   </ul>
+     <?php if (function_exists('magazin_text_domain') ) { ?>
+       <ul class="share down">
+         <li class="share-facebook"><a class="mt-radius" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>" target="_blank"><span><?php echo esc_html__('Share on Facebook', 'ouch'); ?></span></a></li>
+         <?php $input = get_the_title().' '.get_the_permalink(); $title = str_replace( ' ', '+', $input ); ?>
+         <li class="share-twitter"><a class="mt-radius" href="http://twitter.com/home/?status=<?php echo esc_attr($title); ?>" target="_blank"><span><?php echo esc_html__('Tweet on Twitter', 'ouch'); ?></span></a></li>
+         <li class="share-more">
+           <a class="mt-radius" href="https://plus.google.com/share?url=<?php the_permalink() ?>" target="_blank"><div class="google mt-radius-b"></div></a>
+           <a class="mt-radius" href="http://pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo esc_url($url); ?>" target="_blank"><div class="pinterest mt-radius-b"></div></a>
+           <div class="share-more-wrap"><div class="share-more-icon mt-radius">+</div></div>
+         </li>
+       </ul>
+     <?php } ?>
    <?php } ?>
    <div class="clearfix"></div>
    <div class="entry-meta">
