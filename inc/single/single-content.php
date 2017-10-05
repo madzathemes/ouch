@@ -91,11 +91,13 @@ function ouch_single_bottom() {
      </div>
    <?php } ?>
 
+<?php if ( true == get_theme_mod( 'mt_post_prev_next_article', true ) ) { ?>
    <ul class="nav-single">
      <li class="previous pull-left"><?php previous_post_link( '%link', '<span class="color-silver-light">' . esc_html__( 'Previous article','ouch' ) . '</span><div>%title</div>' ); ?></li>
      <li class="next pull-right"><?php next_post_link( '%link', ' <span class="color-silver-light">' . esc_html__( 'Next article','ouch' ) . '</span><div>%title</div>' ); ?></li>
      <li class="clearfix"></li>
    </ul>
+<?php } ?>
    <div class="clear"></div>
 
    <?php if ( is_active_sidebar( 'sidebar-single-bottom-widget-area-before' ) ) {
