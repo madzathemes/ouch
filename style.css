@@ -5228,6 +5228,9 @@ li.mtc-buy {
 .mt-load-more.nomore .off {
   display: block;
 }
+.mt-pl-d {
+  font-size:11px;
+}
 
 /* Remove Class */
 .remove-pl-share .poster-shares,
