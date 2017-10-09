@@ -129,16 +129,14 @@ function ouch_top_content() { $option = get_option("ouch_theme_options"); ?>
 			<?php if(!empty($option['url_trending'])) { ?>	<a class="mt_l_trending <?php if($option['url_trending']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_trending'])); ?>"><?php echo esc_html($t_trending); ?> <span><?php echo esc_html($t_posts); ?></span></a><?php } ?>
 
 		</div>
-		<?php if(!empty($option['header_link_url'])) { ?>
+		<?php if(!empty($option['header_link_url']) and !empty($option['header_link_url_2'])) { ?>
 				<div class="head-bookmark">
-					<?php if(!empty($option['header_link_url_2'])) { ?>
-					<a class="mt-radius mt-head-btn-2" href="<?php echo esc_url($option['header_link_url_2']);  ?>" <?php if(!empty($option['header_link_blank'])) { if($option['header_link_blank']=="1") {?>target="_blank" <?php }} ?>><?php echo esc_attr(get_theme_mod('ouch_header_link_name_2', 'Download Ebook')); ?></a>
-					<?php } ?>
-					
 					<?php if(!empty($option['header_link_url']) and !empty($option['header_link_url_2'])) { ?>
 					<a class="mt-radius" href="<?php echo esc_url($option['header_link_url']);  ?>" <?php if(!empty($option['header_link_blank'])) { if($option['header_link_blank']=="1") {?>target="_blank" <?php }} ?>><?php echo esc_attr(get_theme_mod('ouch_header_link_name', 'Add Post')); ?></a>
 					<?php } ?>
-
+					<?php if(!empty($option['header_link_url_2'])) { ?>
+					<a class="mt-radius mt-head-btn-2" href="<?php echo esc_url($option['header_link_url_2']);  ?>" <?php if(!empty($option['header_link_blank'])) { if($option['header_link_blank']=="1") {?>target="_blank" <?php }} ?>><?php echo esc_attr(get_theme_mod('ouch_header_link_name_2', 'Download Ebook')); ?></a>
+					<?php } ?>
 				</div>
 		<?php } ?>
 <?php }
