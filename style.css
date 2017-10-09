@@ -947,7 +947,7 @@ ul.sf-menu > li > ul > li:hover > ul, div.sf-menu > ul > li > ul > li:hover > ul
 
 .df-is-megamenu ul li {
 
-  background: #ecedf1;
+  background: #f6f5f6;
   margin-right: 0px;
 }
 .df-is-megamenu ul a {
@@ -1038,7 +1038,7 @@ ul.sf-menu ul li .mt-menu-cursor, div.sf-menu ul ul li .mt-menu-cursor {
 }
 ul.sf-menu ul li a, div.sf-menu ul ul li a {
   padding: 11px 15px;
-  background: #ecedf1;
+  background: #f6f5f6;
   width: 100%;
   margin: 1px 0px;
   text-transform: capitalize;
