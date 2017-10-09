@@ -1097,7 +1097,7 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   margin-bottom: 0px;
   float: left;
   margin-left: -1px;
-  bottom: 0px;
+  bottom: 10px;
   position: absolute;
 }
 .sf-menu > li.current_page_item > a::before,
