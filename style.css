@@ -1175,7 +1175,7 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   background: #19191a;
   left: 0px;
   bottom: 0px;
-
+text-transform: none;
   position: absolute;
 }
 .head-nav a:hover::after,
