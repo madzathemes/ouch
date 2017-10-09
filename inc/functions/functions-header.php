@@ -132,7 +132,7 @@ function ouch_top_content() { $option = get_option("ouch_theme_options"); ?>
 		<?php if(!empty($option['header_link_url'])) { ?>
 				<div class="head-bookmark">
 					<a class="mt-radius" href="<?php echo esc_url($option['header_link_url']);  ?>" <?php if(!empty($option['header_link_blank'])) { if($option['header_link_blank']=="1") {?>target="_blank" <?php }} ?>><?php echo esc_attr(get_theme_mod('ouch_header_link_name', 'Add Post')); ?></a>
-					<a class="mt-radiu mt-head-btn-2" href="<?php echo esc_url($option['header_link_url']);  ?>" <?php if(!empty($option['header_link_blank'])) { if($option['header_link_blank']=="1") {?>target="_blank" <?php }} ?>><?php echo esc_attr(get_theme_mod('ouch_header_link_name_2', 'Download Ebook')); ?></a>
+					<a class="mt-radius mt-head-btn-2" href="<?php echo esc_url($option['header_link_url']);  ?>" <?php if(!empty($option['header_link_blank'])) { if($option['header_link_blank']=="1") {?>target="_blank" <?php }} ?>><?php echo esc_attr(get_theme_mod('ouch_header_link_name_2', 'Download Ebook')); ?></a>
 				</div>
 		<?php } ?>
 <?php }
