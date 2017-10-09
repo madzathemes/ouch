@@ -59,7 +59,7 @@ else if(!empty($option['menu_background_width'])) {
 			<div class="row">
 				<div class="col-md-12">
 					<div class="head container-fluid">
-						<div class="head-logo"><?php ouch_logo(); ?></div>
+						<div class="head-logo"><?php ouch_logo(); ?><span>23:20:49</span></div>
 						<?php if  (!empty($option['menu_top_ad'])) {  ?>
 							<?php if  ($option['menu_top_ad']=="ad") {  ?>
 								<div class="top-ad">
