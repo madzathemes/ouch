@@ -2349,7 +2349,7 @@ h2.heading span {
   right: 30px;
   position: absolute;
   bottom: 100%;
-  margin-bottom: -50px;
+  bottom: 30px;
 }
 .poster-next:before {
   content: "\62";
@@ -2357,7 +2357,7 @@ h2.heading span {
 }
 .poster-prev {
   left: 40px;
-  top: 30px;
+  bottom: 30px;
   position: absolute;
 }
 .poster-prev:before {
