@@ -126,8 +126,8 @@ a:hover,
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-.mt-radius-5 .grid-post .poster-cat span.
-.mt-radius-25 .grid-post .poster-cat span {
+.grid-post .poster-cat span.
+.grid-post .poster-cat span {
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important
 }
