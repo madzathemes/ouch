@@ -130,8 +130,6 @@ function ouch_top_content() { $option = get_option("ouch_theme_options"); ?>
 
 		</div>
 
-		<div class="mt-head-date">Monday, October 9, 2017</div>
-
 			<?php if(!empty($option['header_link_url'])) { ?>
 				<div class="head-bookmark">
 					<a class="mt-radius" href="<?php echo esc_url($option['header_link_url']);  ?>" <?php if(!empty($option['header_link_blank'])) { if($option['header_link_blank']=="1") {?>target="_blank" <?php }} ?>><?php echo esc_attr(get_theme_mod('ouch_header_link_name', 'Add Post')); ?></a>
