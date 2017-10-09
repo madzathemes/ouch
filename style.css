@@ -1194,9 +1194,8 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   width: 100%;
 }
 .mt-head-date {
-  text-transform: uppercase;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .mt_l_trending:before,
