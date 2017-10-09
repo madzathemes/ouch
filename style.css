@@ -1226,11 +1226,11 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   content: "\74";
   color: #19191a;
 }
-.mt_l_popular {
+.head-nav .mt_l_popular {
   background: #ffc600;
   color: white
 }
-.mt_l_hot {
+.head-nav .mt_l_hot {
   background: #ff0036;
   color: white
 }
