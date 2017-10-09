@@ -80,7 +80,9 @@ a:hover,
 .mt-radius-5 .poster.trending-normal .poster-info,
 .mt-radius-5 .poster.trending-carousel .poster-info,
 .mt-radius-5 .poster.size-normal .poster-info,
-.mt-radius-5 .head-nav a   {
+.mt-radius-5 .head-nav a,
+.mt-radius-5 .single-cat-wrap .post-categories li a,
+.mt-radius-5 .poster .number   {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -102,7 +104,9 @@ a:hover,
 .mt-radius-25 .poster.trending-normal .poster-info,
 .mt-radius-25 .poster.trending-carousel .poster-info,
 .mt-radius-25 .poster.size-normal .poster-info,
-.mt-radius-25 .head-nav a {
+.mt-radius-25 .head-nav a,
+.mt-radius-25 .single-cat-wrap .post-categories li a,
+.mt-radius-25 .poster .number {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
@@ -116,12 +120,6 @@ a:hover,
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-}
-.single-cat-wrap .post-categories li a,
-.poster .number{
-  -webkit-border-radius: 55px;
-  -moz-border-radius: 55px;
-  border-radius: 55px;
 }
 .mt-header-mobile .nav-search-input input {
   -webkit-border-radius: 0px;
@@ -2814,7 +2812,7 @@ opacity: 0.7
   text-transform: uppercase;
   font-size: 11px;
   display: inline-block;
-  padding: 2px 6px;
+  padding: 4px 8px;
   font-weight: 900;
 }
 .col-col-1 .single-cat-wrap .post-categories {
