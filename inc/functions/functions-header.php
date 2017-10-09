@@ -129,7 +129,7 @@ function ouch_top_content() { $option = get_option("ouch_theme_options"); ?>
 			<?php if(!empty($option['url_trending'])) { ?>	<a class="mt_l_trending <?php if($option['url_trending']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_trending'])); ?>"><?php echo esc_html($t_trending); ?> <span><?php echo esc_html($t_posts); ?></span></a><?php } ?>
 
 		</div>
-		
+
 		<div class="mt-head-date">Monday, October 9, 2017</div>
 
 			<?php if(!empty($option['header_link_url'])) { ?>
@@ -166,7 +166,7 @@ function ouch_logo() {
 		</a>
 	<?php } else { ?>
 		<a class="logo"  href="<?php echo esc_url(home_url('/'));?>">
-			<img src="<?php echo get_template_directory_uri(); ?>/inc/img/logo.png" width="207" height="63" alt="<?php echo the_title(); ?>" />
+			<img src="<?php echo get_template_directory_uri(); ?>/inc/img/logo.png" width="276" height="44" alt="<?php echo the_title(); ?>" />
 		</a>
 	<?php }
 }
