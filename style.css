@@ -76,7 +76,10 @@ a:hover,
 .mt-radius-5 .grid-post .poster-cat span,
 .mt-radius-5 .poster.size-normal .poster-cat span,
 .mt-radius-5 .poster.trending-normal .poster-cat span,
-.mt-radius-5 .poster.trending-carousel .poster-cat span   {
+.mt-radius-5 .poster.trending-carousel .poster-cat span,
+.mt-radius-5 .poster.trending-normal .poster-info,
+.mt-radius-5 .poster.trending-carousel .poster-info,
+.mt-radius-5 .poster.size-normal .poster-info   {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -95,9 +98,9 @@ a:hover,
 .mct-box:hover:before,
 .mct-box.active:before,
 .mt-radius-25 .grid-post .poster-cat span,
-.mt-radius-25 .poster.size-normal .poster-cat span,
-.mt-radius-25 .poster.trending-normal .poster-cat span,
-.mt-radius-25 .poster.trending-carousel .poster-cat span {
+.mt-radius-25 .poster.trending-normal .poster-info,
+.mt-radius-25 .poster.trending-carousel .poster-info,
+.mt-radius-25 .poster.size-normal .poster-info {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
@@ -1847,6 +1850,8 @@ h2.heading span {
   display: inline-block;
   margin-left: 25px;
   padding: 0px 6px 6px;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
 }
 .poster.trending-carousel .poster-info {
   margin-left: 20px;
@@ -1857,8 +1862,6 @@ h2.heading span {
   color: white !important;
   font-size: 11px;
   font-weight: 900;
-  border-bottom-left-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
 }
 .poster-carousel-trending .heading {
   padding-bottom: 10px ;
