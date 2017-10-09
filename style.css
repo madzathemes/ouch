@@ -1656,9 +1656,8 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
 /* HEADING */
 h2.heading {
   text-align: center;
-  text-transform: uppercase;
   position: relative;
-  font-size: 14px;
+  font-size: 35px;
   padding-bottom: 20px;
   padding-top: 0px;
 }
