@@ -1216,7 +1216,7 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
 }
 .mt_l_hot:before {
   content: "\e9a9";
-  color: #ff0036;
+  color: #fff;
 }
 .mt_l_popular:before {
   content: "\e9d9";
@@ -1228,6 +1228,10 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
 }
 .mt_l_popular {
   background: #ffc600;
+  color: white
+}
+.mt_l_hot {
+  background: #ff0036;
   color: white
 }
 
