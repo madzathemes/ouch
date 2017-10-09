@@ -1156,6 +1156,7 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   padding: 5px 0px;
   display: inline-block;
   position: relative;
+  text-transform: uppercase;
 }
 .head-nav a:hover,
 .head-nav a.active {
@@ -1181,7 +1182,11 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
 .head-nav a.active::after {
   width: 100%;
 }
-
+.mt-head-date {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
 
 .mt_l_trending:before,
 .mt_l_hot:before,
