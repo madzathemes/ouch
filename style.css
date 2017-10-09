@@ -119,8 +119,8 @@ a:hover,
 }
 .mt-radius-5 .grid-post .poster-cat span.
 .mt-radius-25 .grid-post .poster-cat span {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important
 }
 
 .mt-color-2 .post-content-wrap,
