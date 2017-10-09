@@ -130,7 +130,7 @@ function ouch_top_content() { $option = get_option("ouch_theme_options"); ?>
 
 		</div>
 				<div class="head-bookmark">
-					<?php if(!empty($option['header_link_url']) and !empty($option['header_link_url_2'])) { ?>
+					<?php if(!empty($option['header_link_url'])) { ?>
 					<a class="mt-radius" href="<?php echo esc_url($option['header_link_url']);  ?>" <?php if(!empty($option['header_link_blank'])) { if($option['header_link_blank']=="1") {?>target="_blank" <?php }} ?>><?php echo esc_attr(get_theme_mod('ouch_header_link_name', 'Add Post')); ?></a>
 					<?php } ?>
 					<?php if(!empty($option['header_link_url_2'])) { ?>
