@@ -72,7 +72,8 @@ a:hover,
 .mt-radius-5 div.sf-menu ul ul li a,
 .mt-radius-5 .df-is-megamenu ul li,
 .mt-radius-5 .mt-coment-nav a,
-.mtc-border-5  {
+.mtc-border-5,
+.mt-radius-5 .grid-post .poster-cat span  {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -89,7 +90,8 @@ a:hover,
 .mt-radius-25 .mt-coment-nav a,
 .mtc-border-25,
 .mct-box:hover:before,
-.mct-box.active:before {
+.mct-box.active:before,
+.mt-radius-25 .grid-post .poster-cat span {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
@@ -114,6 +116,11 @@ a:hover,
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+}
+.mt-radius-5 .grid-post .poster-cat span.
+.mt-radius-25 .grid-post .poster-cat span {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px
 }
 
 .mt-color-2 .post-content-wrap,
