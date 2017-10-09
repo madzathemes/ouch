@@ -38,7 +38,7 @@
 	</div>
 </div>
 
-<a href="#" class="footer-scroll-to-top mt-theme-background"></a>
+<a href="#" class="footer-scroll-to-top mt-theme-background mt-radius"></a>
 <?php  wp_footer(); ?>
 </body>
 </html>
