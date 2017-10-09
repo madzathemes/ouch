@@ -1163,7 +1163,6 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
 .head-nav a span {
   font-weight:400;
 }
-
 .head-nav a::after {
   content: "";
   width: 0%;
