@@ -1211,20 +1211,22 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   margin-left: -24px;
   font-size: 18px;
   margin-top:-2px;
-  color: #a5ce27;
+  color: #fff;
   font-weight: normal;
 }
 .mt_l_hot:before {
   content: "\e9a9";
-  color: #fff;
 }
 .mt_l_popular:before {
   content: "\e9d9";
-  color: white;
 }
 .mt_l_latest:before {
   content: "\74";
   color: #19191a;
+}
+.head-nav .mt_l_trending {
+  background: #a5ce27;
+  color: white !important
 }
 .head-nav .mt_l_popular {
   background: #ffc600;
