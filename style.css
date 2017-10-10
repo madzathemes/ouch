@@ -685,7 +685,7 @@ blockquote p {
 .entry-content blockquote {
     font-size: 21px !important;
     font-weight: 800;
-    padding: 15px 40px 0px;
+    padding: 20px 20px 0px;
     margin: 10px 0px 30px;
     border-left: 5px solid black;
 }
