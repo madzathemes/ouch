@@ -74,6 +74,7 @@ a:hover,
 .mt-radius-5 .mt-coment-nav a,
 .mtc-border-5,
 .mt-radius-5 .grid-post .poster-cat span,
+.mt-radius-25 .grid-post .poster-cat span,
 .mt-radius-5 .poster.size-normal .poster-cat span,
 .mt-radius-5 .poster.trending-normal .poster-cat span,
 .mt-radius-5 .poster.trending-carousel .poster-cat span,
@@ -83,7 +84,9 @@ a:hover,
 .mt-radius-5 .head-nav a,
 .mt-radius-5 .single-cat-wrap .post-categories li a,
 .mt-radius-5 .poster .number,
-.mt-radius-5 .poster-large-cat span   {
+.mt-radius-5 .poster-large-cat span,
+.mt-radius-5 .df-is-megamenu ul .poster-cat,
+.mt-radius-25 .df-is-megamenu ul .poster-cat   {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -101,7 +104,6 @@ a:hover,
 .mtc-border-25,
 .mct-box:hover:before,
 .mct-box.active:before,
-.mt-radius-25 .grid-post .poster-cat span,
 .mt-radius-25 .poster.trending-normal .poster-info,
 .mt-radius-25 .poster.trending-carousel .poster-info,
 .mt-radius-25 .poster.size-normal .poster-info,
@@ -132,6 +134,10 @@ a:hover,
 .poster-large-cat span {
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important
+}
+.grid-post .poster-cat span  {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important
 }
 .mt-color-2 .post-content-wrap,
 .mt-color-2.post-style-6 .post-media-wrap,
