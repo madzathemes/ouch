@@ -683,10 +683,11 @@ blockquote p {
 }
 .sticky {}
 .entry-content blockquote {
-  font-weight: 800;
-  padding: 15px 40px 0px;
-  margin: 10px 0px 30px;
-  border-left: 5px solid black;
+    font-size: 21px !important;
+    font-weight: 800;
+    padding: 15px 40px 0px;
+    margin: 10px 0px 30px;
+    border-left: 5px solid black;
 }
 
 .entry-content ul,
