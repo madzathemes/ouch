@@ -701,7 +701,7 @@ blockquote:after {
 .entry-content blockquote {
     font-size: 21px !important;
     font-weight: 800;
-    margin: 10px 120px;
+    margin: 10px 40px;
 }
 .entry-content ul,
 .entry-content ol{
