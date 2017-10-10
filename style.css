@@ -1199,6 +1199,7 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   font-size: 16px;
 }
 
+
 .mt_l_trending:before,
 .mt_l_hot:before,
 .mt_l_popular:before,
@@ -1209,31 +1210,22 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   margin-left: -24px;
   font-size: 18px;
   margin-top:-2px;
-  color: #fff;
+  color: #a5ce27;
   font-weight: normal;
 }
 .mt_l_hot:before {
   content: "\e9a9";
+  color: #ff0036;
 }
 .mt_l_popular:before {
   content: "\e9d9";
+  color: #ffc600;
 }
 .mt_l_latest:before {
   content: "\74";
   color: #19191a;
 }
-.head-nav .mt_l_trending {
-  background: #a5ce27;
-  color: white !important
-}
-.head-nav .mt_l_popular {
-  background: #ffc600;
-  color: white !important
-}
-.head-nav .mt_l_hot {
-  background: #ff0036;
-  color: white !important
-}
+
 
 
 
