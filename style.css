@@ -1244,14 +1244,14 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
 /* HEAD MENU GLOBAL */
 .menu-background,
 .header-menu {
-  background: #f1f1f1;
+  background: #ff0437;
 }
 .menu-background-left {
-  background: #ff0036;
+  background: #e2032f;
   margin-right: 10px;
 }
 .menu-background-right {
-  background: #fff;
+  background: #e2032f;
 }
 .menu-background-mobile {
   background: #fff;
@@ -1263,7 +1263,7 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   height: 46px;
 }
 .top-nav a {
-  color: #19191a!important;
+  color: #fff!important;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
