@@ -518,4 +518,35 @@ Kirki::add_field( 'zoom', array(
 }
 
 add_action('customize_register', 'ouch_customize_colors');
+
+function ouch_color_kirki_fields( $fields ) {
+
+
+  $fields[] =  array(
+    'type'        => 'background',
+    'settings'    => 'mt_bg_header_top',
+    'label'       => esc_attr__( 'Top Header Background', 'nextnews' ),
+    'section'     => 'colors_menu',
+    'priority'    => 1,
+    'default'     => array(
+            'color'    => '',
+            'image'    => '',
+            'repeat'   => 'no-repeat',
+            'size'     => '',
+            'attach'   => 'fixed',
+            'position' => 'center-bottom',
+        ),
+        'output'      => array(
+          array(
+            'element' => '.header-mt-container-wrap',
+            'suffix'   => ' !important',
+          ),
+        ),
+  );
+
+
+
+  return $fields;
+}
+add_filter( 'kirki/fields', 'ouch_color_kirki_fields' );
 ?>
